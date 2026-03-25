@@ -2,6 +2,7 @@ body,
 html,
 p,
 ul,
+h1,
 h2,
 h3,
 h4,
@@ -15,7 +16,7 @@ html {
 }
 
 body {
-    // overflow: hidden;
+    overflow: hidden;
     font-family: $primaryFont;
     color: $primaryColor;
     font-size: 1.6rem;
@@ -24,13 +25,11 @@ body {
 
 .headerWrapper, .bodyWrapper {
     max-width: 1400px;
-    width: 78%;
+    width: 79%;
     margin: 0 auto;
 }
 
-.bodyWrapper {
-     width: 68%;
-}
+
 
 ul {
     list-style: none;
@@ -39,6 +38,7 @@ ul {
 a {
     text-decoration: none;
     color: inherit;
+    display: inline-block;
 }
 
 img {
@@ -50,6 +50,9 @@ h2, h3, h4 {
     line-height: normal;
 }
 
+h1 {
+    font-size: 5rem;
+}
 h2 {
     font-size: 8rem;
     letter-spacing: 0.5rem;
@@ -59,7 +62,7 @@ h2 {
     z-index: 2;
     position: relative;
     color: $secondaryColor;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 }
 
 h3 {

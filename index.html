@@ -5,14 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Abir Halwa | Portfolio</title>
+    <link rel="shortcut icon" href="./assets/favicon.png" type="image/png" />
     <link
-        href="https://fonts.googleapis.com/css?family=Comfortaa|Lovers+Quarrel|Montserrat:400,500,600,700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Lovers+Quarrel&family=Montserrat:wght@400;500;600;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet"
-        href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+        href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
     <script src="https://kit.fontawesome.com/9afc9229b5.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./styles/style.css">
-
+    <meta name="keywords" content="Abir Halwa, Web Developer, front-end web developer, software engineer Portfolio" />
+    <meta name="description"
+        content=" I’m a very determined and enthusiastic front-end web developer based in Toronto. I combine my knowledge as a software engineer with my new coding skill set to build comprehensive web applications. I'm collaborative and hardworking team player with critical thinking skills and a systematic approach." />
+    <meta name="author" content="Abir Halwa" />
 </head>
 
 <body>
@@ -30,11 +34,16 @@
     </div>
     <!--END PAGE LOADER-->
     <header id="home">
-        <nav>
-            <div class="headerWrapper headerTop">
+        <div class="headerTop">
+            <div class="hamburger">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </div>
+            <nav class="headerWrapper">
                 <ul>
                     <li>
-                        <a href="#home" id="homeLink" class="active">home</a>
+                        <a href="#home" id="homeLink" class="theActive">home</a>
                     </li>
                     <li>
                         <a href="#about" id="aboutLink" class="notActive">about</a>
@@ -49,26 +58,27 @@
                         <a href="#contact" id="contactLink" class="notActive">contact</a>
                     </li>
                 </ul>
-                <a href=""><img src="./assets/logo.png" alt=""></a>
-            </div>
-        </nav>
-       <div class="headerBottom">
+
+                <img src="./assets/logo.png" alt="letter a logo" id="logo">
+            </nav>
+        </div>
+        <div class="headerBottom headerWrapper">
             <h1>
-                <div>
+                <span>
                     Hello,
-                </div>
-                <div>
+                </span>
+                <span>
                     My name is
                     <a>Abir</a>
                     and
-                </div>
-                <div>
+                </span>
+                <span>
                     I'm a
-                    <a>web Developer</a>
-                </div>
+                    <a>Software Engineer</a>
+                </span>
             </h1>
 
-       </div>
+        </div>
 
     </header>
     <main>
@@ -95,7 +105,8 @@
                                 Web Developer and Software Engineer Based in Toronto
                             </h4>
                             <p>
-                                I’m a very determine and enthusiastic front-end web developer. I combine my knowledge as
+                                I’m a very determined and enthusiastic front-end web developer. I combine my knowledge
+                                as
                                 a
                                 software engineer with my
                                 new
@@ -119,37 +130,105 @@
                     Skills
                 </h2>
                 <ul class="skillsList">
+                    <!-- Frontend -->
                     <li>
-                        <i class="devicon-html5-plain colored" title="html 5" aria-hidden="true"
-                            aria-label="HTML 5"></i>
+                        <i class="devicon-html5-plain colored" aria-hidden="true"></i>
+                        <p>HTML5</p>
                     </li>
                     <li>
-                        <i class="devicon-photoshop-plain colored" aria-hidden="true" aria-label="photoshop"></i>
+                        <i class="devicon-css3-plain colored" aria-hidden="true"></i>
+                        <p>CSS3</p>
                     </li>
                     <li>
-                        <i class="devicon-css3-plain colored" aria-hidden="true" aria-label="CSS 3"></i>
+                        <i class="devicon-sass-original colored" aria-hidden="true"></i>
+                        <p>SASS</p>
                     </li>
                     <li>
-                        <i class="devicon-sass-original colored" aria-hidden="true" aria-label="SASS"></i>
+                        <i class="devicon-tailwindcss-plain colored" aria-hidden="true"></i>
+                        <p>Tailwind</p>
                     </li>
                     <li>
-                        <i class="devicon-javascript-plain colored" aria-hidden="true" aria-label="javascript"></i>
+                        <i class="devicon-javascript-plain colored" aria-hidden="true"></i>
+                        <p>JavaScript</p>
                     </li>
                     <li>
-                        <i class="devicon-jquery-plain colored" aria-hidden="true" aria-label="J query"></i>
-
+                        <i class="devicon-typescript-plain colored" aria-hidden="true"></i>
+                        <p>TypeScript</p>
                     </li>
                     <li>
-                        <i class="devicon-visualstudio-plain colored" aria-hidden="true" aria-label="visual studio"></i>
+                        <i class="devicon-react-original colored" aria-hidden="true"></i>
+                        <p>React</p>
                     </li>
                     <li>
-                        <i class="devicon-react-original colored"></i>
+                        <i class="devicon-redux-original colored" aria-hidden="true"></i>
+                        <p>Redux</p>
                     </li>
                     <li>
-                        <i class="devicon-github-plain" aria-hidden="true" aria-label="git hub"></i>
+                        <i class="devicon-jquery-plain colored" aria-hidden="true"></i>
+                        <p>jQuery</p>
                     </li>
                     <li>
-                        <i class="devicon-git-plain colored" aria-hidden="true" aria-label="git"></i>
+                        <img src="./assets/responsive-design(1).png" alt="">
+                        <p>Responsive</p>
+                    </li>
+                    <li>
+                        <i class="fas fa-universal-access"></i>
+                        <p>Accessibility</p>
+                    </li>
+                    <li>
+                        <i class="fas fa-th"></i>
+                        <p>Design Systems</p>
+                    </li>
+                    <!-- Backend -->
+                    <li>
+                        <i class="devicon-nodejs-plain colored" aria-hidden="true"></i>
+                        <p>Node.js</p>
+                    </li>
+                    <li>
+                        <img src="./assets/icons8-rest-api-80.png" alt="">
+                        <p>REST API</p>
+                    </li>
+                    <li>
+                        <i class="fas fa-cubes"></i>
+                        <p>Microservices</p>
+                    </li>
+                    <li>
+                        <img src="./assets/icons8-firebase-480.png" alt="">
+                        <p>Firebase</p>
+                    </li>
+                    <li>
+                        <i class="devicon-postgresql-plain colored" aria-hidden="true"></i>
+                        <p>PostgreSQL</p>
+                    </li>
+                    <li>
+                        <img src="./assets/icons8-database-administrator-50.png" alt="">
+                        <p>SQL</p>
+                    </li>
+                    <!-- Cloud/Infrastructure -->
+                    <li>
+                        <i class="devicon-amazonwebservices-plain colored" aria-hidden="true"></i>
+                        <p>AWS</p>
+                    </li>
+                    <li>
+                        <i class="fas fa-code"></i>
+                        <p>Claude Code</p>
+                    </li>
+                    <!-- Tools -->
+                    <li>
+                        <i class="devicon-github-plain" aria-hidden="true"></i>
+                        <p>GitHub</p>
+                    </li>
+                    <li>
+                        <i class="devicon-git-plain colored" aria-hidden="true"></i>
+                        <p>Git</p>
+                    </li>
+                    <li>
+                        <i class="fas fa-cogs"></i>
+                        <p>CI/CD</p>
+                    </li>
+                    <li>
+                        <img src="./assets/coaching-512.png" alt="">
+                        <p>Pair Programming</p>
                     </li>
                 </ul>
             </div>
@@ -161,10 +240,10 @@
             </h2>
             <div class="projectTypes">
                 <ul>
-                    <li data-type="all">All</li>
-                    <li data-type="react">React</li>
-                    <li data-type="javascript">JavaScript</li>
-                    <li data-type="psd">PSD Conversions</li>
+                    <li><a data-type="all" href="#" class="projectActive">All</a></li>
+                    <li><a data-type="react" href="#" class="notActive">React</a></li>
+                    <li><a data-type="jquery" href="#" class="notActive">jQuery</a></li>
+                    <li><a data-type="psd" href="#" class="notActive">PSD Conversions</a></li>
                 </ul>
             </div>
             <ul>
@@ -172,10 +251,16 @@
                     <div class="projectImg">
                         <img src="./assets/reactProject1.jpg" alt="scan it web page screenshot">
                         <span>
-                            <a href="" title="live Link"><i class="fas fa-code"></i></a>
+                            <a href="https://github.com/abirhalwa/abir-halwa-project-five" target="_blank"
+                                title="Code on GitHub"><i class="fas fa-code"></i>
+                            <span class="sr-only">code on git hub</span>
+                            </a>
                         </span>
                         <span>
-                            <a href="" title="Code on GitHub"><i class="fas fa-link"></i></a>
+                            <a href="https://abirhalwa.github.io/abir-halwa-project-five/" target="_blank"
+                                title="live Link"><i class="fas fa-link"></i>
+                            <span class="sr-only">live link</span>
+                            </a>
                         </span>
                     </div>
                     <div class="projectInfo">
@@ -187,6 +272,21 @@
                             which can be
                             saved as contact card.
                         </p>
+                        <div class="tools links">
+                            <h4>
+                                Links:
+                            </h4>
+                            <ul>
+                                <li>
+                                    <a href="https://abirhalwa.github.io/abir-halwa-project-five/" target="_blank"
+                                        class="projectsLinks">Live Link</a>
+                                </li>
+                                <li>
+                                    <a href="https://github.com/abirhalwa/abir-halwa-project-five" target="_blank"
+                                        class="projectsLinks">GitHub Code</a>
+                                </li>
+                            </ul>
+                        </div>
                         <div class="tools">
                             <h4>
                                 Used Stack:
@@ -194,28 +294,43 @@
                             <ul>
                                 <li>
                                     <i class="devicon-html5-plain colored" aria-hidden="true"></i>
-                                    <p>HTML 5</p>
+                                    <p>HTML5</p>
                                 </li>
                                 <li>
                                     <i class="devicon-css3-plain colored" aria-hidden="true"></i>
-                                    <p>CSS 3</p>
+                                    <p>CSS3</p>
                                 </li>
                                 <li>
-                                    <i class="devicon-react-original colored"></i>
+                                    <i class="devicon-react-original colored" aria-hidden="true"></i>
                                     <p>ReactJS</p>
+                                </li>
+                                <li>
+                                    <img src="./assets/azure.png" alt="">
+                                    <p>Azure API</p>
+                                </li>
+                                <li>
+                                    <img src="./assets/responsive-design(1).png" alt="">
+                                    <p>Responsive</p>
                                 </li>
                             </ul>
                         </div>
+
                     </div>
                 </li>
-                <li class="projects" data-type="javascript">
+                <li class="projects" data-type="jquery">
                     <div class="projectImg">
-                        <img src="./assets/javaProject3.jpg" alt="invoice book web page screenshot">
+                        <img src="./assets/javaProject3.jpg" alt="typing rabbit website screenshot">
                         <span>
-                            <a href="" title="live Link"><i class="fas fa-code"></i></a>
+                            <a href="https://github.com/abirhalwa/abirHalwaProjectThree" target="_blank"
+                                title="Code on GitHub"><i class="fas fa-code"></i>
+                            <span class="sr-only">code on git hub</span>
+                            </a>
                         </span>
                         <span>
-                            <a href="" title="Code on GitHub"><i class="fas fa-link"></i></a>
+                            <a href="https://abirhalwa.github.io/abirHalwaProjectThree/" target="_blank"
+                                title="Live Link"><i class="fas fa-link"></i>
+                            <span class="sr-only">live link</span>
+                            </a>
                         </span>
                     </div>
                     <div class="projectInfo">
@@ -227,6 +342,23 @@
                             speed and
                             accuracy.
                         </p>
+                        <div class="tools links">
+                            <h4>
+                                Links:
+                            </h4>
+                            <ul>
+                                <li>
+                                    <a href="https://abirhalwa.github.io/abirHalwaProjectThree/" target="_blank"
+                                        class="projectsLinks">Live
+                                        Link</a>
+                                </li>
+                                <li>
+                                    <a href="https://github.com/abirhalwa/abirHalwaProjectThree" target="_blank"
+                                        class="projectsLinks">GitHub
+                                        Code</a>
+                                </li>
+                            </ul>
+                        </div>
                         <div class="tools">
                             <h4>
                                 Used Stack:
@@ -234,16 +366,19 @@
                             <ul>
                                 <li>
                                     <i class="devicon-html5-plain colored" aria-hidden="true"></i>
-                                    <p>HTML 5</p>
+                                    <p>HTML5</p>
                                 </li>
                                 <li>
-                                    <i class="devicon-css3-plain colored" aria-hidden="true"></i>
-                                    <p>CSS 3</p>
+                                    <i class="devicon-sass-original colored" aria-hidden="true"></i>
+                                    <p>SASS</p>
                                 </li>
                                 <li>
-                                    <i class="devicon-javascript-plain colored" aria-hidden="true"
-                                        aria-label="javascript"></i>
-                                    <p>JavaScript</p>
+                                    <i class="devicon-jquery-plain colored" aria-hidden="true"></i>
+                                    <p>jQuery</p>
+                                </li>
+                                <li>
+                                    <img src="./assets/responsive-design(1).png" alt="">
+                                    <p>Responsive</p>
                                 </li>
                             </ul>
                         </div>
@@ -253,21 +388,50 @@
                     <div class="projectImg">
                         <img src="./assets/reactProject2.jpg" alt="quick flik picker web page screenshot">
                         <span>
-                            <a href="" title="live Link"><i class="fas fa-code"></i></a>
+                            <a href="https://github.com/quick-flick-picker-25/quickFlickPicker25" target="_blank"
+                                title="Code on GitHub"><i class="fas fa-code"></i>
+                            <span class="sr-only">code on git hub</span>
+                            </a>
                         </span>
                         <span>
-                            <a href="" title="Code on GitHub"><i class="fas fa-link"></i></a>
+                            <a href="https://quick-flick-picker-25.github.io/quickFlickPicker25/" target="_blank"
+                                title="live Link"><i class="fas fa-link"></i>
+                            <span class="sr-only">live link</span>
+                            </a>
                         </span>
                     </div>
                     <div class="projectInfo">
                         <h3>
-                            quick flick quicker
+                            quick flick picker
                         </h3>
                         <p>
-                            An app lets you easily scan business card images and convert them to editable contact blocks
-                            which can be
-                            saved as contact card.
+                            An app that helps the indecisive finally pick a movie to watch.
+                            Users can create and name lists of movies they want to
+                            watch.
                         </p>
+                        <p>
+                            This was a group programming project created with <a href="https://kaystocks.com/"
+                                target="_blank" class="projectsLinks">Kay Evans-Stocks</a>, <a class="projectsLinks"
+                                href="http://www.opjot.com" target="_blank">Opjot Nijjar</a> and <a
+                                href="http://arielrivera.ca" target="_blank" class="projectsLinks">Ariel Rivera</a>
+                        </p>
+                        <div class="tools links">
+                            <h4>
+                                Links:
+                            </h4>
+                            <ul>
+                                <li>
+                                    <a href="https://quick-flick-picker-25.github.io/quickFlickPicker25/"
+                                        target="_blank" class="projectsLinks">Live
+                                        Link</a>
+                                </li>
+                                <li>
+                                    <a href="https://github.com/quick-flick-picker-25/quickFlickPicker25"
+                                        target="_blank" class="projectsLinks">GitHub
+                                        Code</a>
+                                </li>
+                            </ul>
+                        </div>
                         <div class="tools">
                             <h4>
                                 Used Stack:
@@ -275,28 +439,47 @@
                             <ul>
                                 <li>
                                     <i class="devicon-html5-plain colored" aria-hidden="true"></i>
-                                    <p>HTML 5</p>
+                                    <p>HTML5</p>
                                 </li>
                                 <li>
                                     <i class="devicon-css3-plain colored" aria-hidden="true"></i>
-                                    <p>CSS 3</p>
+                                    <p>CSS3</p>
                                 </li>
                                 <li>
-                                    <i class="devicon-react-original colored"></i>
+                                    <i class="devicon-react-original colored" aria-hidden="true"></i>
                                     <p>ReactJS</p>
                                 </li>
+                                <li>
+                                    <img src="./assets/icons8-firebase-480.png" alt="">
+                                    <p>Firebase</p>
+                                </li>
+                                <li>
+                                    <img src="./assets/icons8-rest-api-80.png" alt="">
+                                    <p>API</p>
+                                </li>
+                                <li>
+                                    <img src="./assets/responsive-design(1).png" alt="">
+                                    <p>Responsive</p>
+                                </li>
+
                             </ul>
                         </div>
                     </div>
                 </li>
-                <li class="projects" data-type="javascript">
+                <li class="projects" data-type="jquery">
                     <div class="projectImg">
-                        <img src="./assets/javaProject4.jpg" alt="invoice book web page screenshot">
+                        <img src="./assets/javaProject4.jpg" alt="give me a drink web page screenshot">
                         <span>
-                            <a href="" title="live Link"><i class="fas fa-code"></i></a>
+                            <a href="https://github.com/abirhalwa/abirAndBrittanyProjectFour" target="_blank"
+                                title="Code on GitHub"><i class="fas fa-code"></i>
+                            <span class="sr-only">code on git hub</span>
+                            </a>
                         </span>
                         <span>
-                            <a href="" title="Code on GitHub"><i class="fas fa-link"></i></a>
+                            <a href="https://abirhalwa.github.io/abirAndBrittanyProjectFour/" target="_blank"
+                                title="live Link"><i class="fas fa-link"></i>
+                            <span class="sr-only">live link</span>
+                            </a>
                         </span>
                     </div>
                     <div class="projectInfo">
@@ -307,6 +490,27 @@
                             An app that uses an API to suggest a drink recipe to the user based on their “mood” and
                             other criteria.
                         </p>
+                        <p>
+                            This was a pair programming project created with <a href="https://brittanygiles.ca"
+                                class="projectsLinks" target="_blank">Brittany Giles</a>
+                        </p>
+                        <div class="tools links">
+                            <h4>
+                                Links:
+                            </h4>
+                            <ul>
+                                <li>
+                                    <a href="https://abirhalwa.github.io/abirAndBrittanyProjectFour/" target="_blank"
+                                        class="projectsLinks">Live
+                                        Link</a>
+                                </li>
+                                <li>
+                                    <a href="https://github.com/abirhalwa/abirAndBrittanyProjectFour" target="_blank"
+                                        class="projectsLinks">GitHub
+                                        Code</a>
+                                </li>
+                            </ul>
+                        </div>
                         <div class="tools">
                             <h4>
                                 Used Stack:
@@ -314,29 +518,42 @@
                             <ul>
                                 <li>
                                     <i class="devicon-html5-plain colored" aria-hidden="true"></i>
-                                    <p>HTML 5</p>
+                                    <p>HTML5</p>
                                 </li>
                                 <li>
-                                    <i class="devicon-css3-plain colored" aria-hidden="true"></i>
-                                    <p>CSS 3</p>
+                                    <i class="devicon-sass-original colored" aria-hidden="true"></i>
+                                    <p>SASS</p>
                                 </li>
                                 <li>
-                                    <i class="devicon-javascript-plain colored" aria-hidden="true"
-                                        aria-label="javascript"></i>
-                                    <p>JavaScript</p>
+                                    <i class="devicon-jquery-plain colored" aria-hidden="true"></i>
+                                    <p>jQuery</p>
+                                </li>
+                                <li>
+                                    <img src="./assets/icons8-rest-api-80.png" alt="">
+                                    <p>API</p>
+                                </li>
+                                <li>
+                                    <img src="./assets/responsive-design(1).png" alt="">
+                                    <p>Responsive</p>
                                 </li>
                             </ul>
                         </div>
                     </div>
                 </li>
-                <li class="projects" data-type="javascript">
+                <li class="projects" data-type="jquery">
                     <div class="projectImg">
                         <img src="./assets/javaProject1.jpg" alt="invoice book web page screenshot">
                         <span>
-                            <a href="" title="live Link"><i class="fas fa-code"></i></a>
+                            <a href="https://github.com/abirhalwa/invoiceBook1/" title="Code on GitHub"
+                                target="_blank"><i class="fas fa-code"></i>
+                            <span class="sr-only">code on git hub</span>
+                            </a>
                         </span>
                         <span>
-                            <a href="" title="Code on GitHub"><i class="fas fa-link"></i></a>
+                            <a href="https://abirhalwa.github.io/invoiceBook1/" target="_blank" title="live Link"><i
+                                    class="fas fa-link"></i>
+                                <span class="sr-only">live link</span>
+                                </a>
                         </span>
                     </div>
                     <div class="projectInfo">
@@ -346,6 +563,23 @@
                             An online invoicing system allows you to add products and calculate their totals before and
                             after tax.
                         </p>
+                        <div class="tools links">
+                            <h4>
+                                Links:
+                            </h4>
+                            <ul>
+                                <li>
+                                    <a href="https://abirhalwa.github.io/invoiceBook1/" target="_blank"
+                                        class="projectsLinks">Live
+                                        Link</a>
+                                </li>
+                                <li>
+                                    <a href="https://github.com/abirhalwa/invoiceBook1/" target="_blank"
+                                        class="projectsLinks">GitHub
+                                        Code</a>
+                                </li>
+                            </ul>
+                        </div>
                         <div class="tools">
                             <h4>
                                 Used Stack:
@@ -353,16 +587,19 @@
                             <ul>
                                 <li>
                                     <i class="devicon-html5-plain colored" aria-hidden="true"></i>
-                                    <p>HTML 5</p>
+                                    <p>HTML5</p>
                                 </li>
                                 <li>
                                     <i class="devicon-css3-plain colored" aria-hidden="true"></i>
-                                    <p>CSS 3</p>
+                                    <p>CSS3</p>
                                 </li>
                                 <li>
-                                    <i class="devicon-javascript-plain colored" aria-hidden="true"
-                                        aria-label="javascript"></i>
-                                    <p>JavaScript</p>
+                                    <i class="devicon-jquery-plain colored" aria-hidden="true"></i>
+                                    <p>jQuery</p>
+                                </li>
+                                <li>
+                                    <img src="./assets/responsive-design(1).png" alt="">
+                                    <p>Responsive</p>
                                 </li>
                             </ul>
                         </div>
@@ -372,10 +609,16 @@
                     <div class="projectImg">
                         <img src="./assets/psdProject1.jpg" alt="woo commerce web page screenshot">
                         <span>
-                            <a href="" title="live Link"><i class="fas fa-code"></i></a>
+                            <a href="https://github.com/abirhalwa/zap-ecommerce1" title="Code on GitHub"
+                                target="_blank"><i class="fas fa-code"></i>
+                            <span class="sr-only">code on git hub</span>
+                            </a>
                         </span>
                         <span>
-                            <a href="" title="Code on GitHub"><i class="fas fa-link"></i></a>
+                            <a href="https://abirhalwa.github.io/zap-ecommerce1/" target="_blank" title="live Link"><i
+                                    class="fas fa-link"></i>
+                                <span class="sr-only">live link</span>
+                                </a>
                         </span>
                     </div>
                     <div class="projectInfo">
@@ -385,6 +628,23 @@
                         <p>
                             Single-page PSD conversion responsive design
                         </p>
+                        <div class="tools links">
+                            <h4>
+                                Links:
+                            </h4>
+                            <ul>
+                                <li>
+                                    <a href="https://abirhalwa.github.io/zap-ecommerce1/" target="_blank"
+                                        class="projectsLinks">Live
+                                        Link</a>
+                                </li>
+                                <li>
+                                    <a href="https://github.com/abirhalwa/zap-ecommerce1" target="_blank"
+                                        class="projectsLinks">GitHub
+                                        Code</a>
+                                </li>
+                            </ul>
+                        </div>
                         <div class="tools">
                             <h4>
                                 Used Stack:
@@ -392,63 +652,70 @@
                             <ul>
                                 <li>
                                     <i class="devicon-html5-plain colored" aria-hidden="true"></i>
-                                    <p>HTML 5</p>
+                                    <p>HTML5</p>
                                 </li>
                                 <li>
                                     <i class="devicon-css3-plain colored" aria-hidden="true"></i>
-                                    <p>CSS 3</p>
+                                    <p>CSS3</p>
+                                </li>
+                                <li>
+                                    <img src="./assets/responsive-design(1).png" alt="">
+                                    <p>Responsive</p>
                                 </li>
                             </ul>
                         </div>
                     </div>
                 </li>
-
-
-
-
             </ul>
         </section>
-        <section>
-            <section id="contact" class="darkBg">
-                <div class="bodyWrapper">
-                    <span class="shadow">Contact</span>
-                    <h2>
-                        Contact
-                    </h2>
-                    <div class="contact">
-                        <div class="contactInfo">
-                            <h3>Get in Touch</h3>
-                            <div>
-                                <i class="fas fa-envelope"></i>
-                                <a href="mailto:abir.halwa@gmail.com">abir.halwa@gmail.com</a>
-                            </div>
-                            <div>
-                                <i class="fas fa-map-marker-alt"></i>
-                                <span>Toronto, Canada</span>
-                            </div>
-                            <nav>
-                                <ul class="socialMedia">
-                                  <li><a href="https://twitter.com/abirhalwa" target="_blank"><i class="fab fa-twitter"></i></a></li>
-                                  <li><a href="https://www.linkedin.com/in/abirhalwa/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
-                                  <li><a href="https://github.com/abirhalwa" target="_blank"><i class="fab fa-github"></a></i></li>
-                                </ul>
-                            </nav>
+        <section id="contact" class="darkBg">
+            <div class="bodyWrapper">
+                <span class="shadow">Contact</span>
+                <h2>
+                    Contact
+                </h2>
+                <div class="contact">
+                    <div class="contactInfo">
+                        <h3>Get in Touch</h3>
+                        <div>
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:abir.halwa@gmail.com">abir.halwa@gmail.com</a>
                         </div>
-                        <form action="">
-                            <label for="name" class="visuallyHidden">your name</label>
-                            <input type="text" name="" id="name" placeholder="Your Name">
-                            <label for="email" class="visuallyHidden">your email</label>
-                            <input type="text" name="" id="name" placeholder="Your Email">
-                            <label for="message" class="visuallyHidden">your message</label>
-                                <textarea name="" id="message"  placeholder="Your Message"></textarea>
-                            <button data-text="send" type="submit">send</button>
-                        </form>
+                        <div>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Toronto, Canada</span>
+                        </div>
+                        <nav>
+                            <ul class="socialMedia">
+                                <li><a href="https://twitter.com/abirhalwa" target="_blank"><i
+                                            class="fab fa-twitter"></i></a></li>
+                                <li><a href="https://www.linkedin.com/in/abirhalwa/" target="_blank"><i
+                                            class="fab fa-linkedin"></i></a></li>
+                                <li><a href="https://github.com/abirhalwa" target="_blank"><i
+                                            class="fab fa-github"></i></a></li>
+                            </ul>
+                        </nav>
                     </div>
+                  <form action="https://formspree.io/mzbjlzor" method="POST">
+                        <label for="name" class="visuallyHidden">your name</label>
+                        <input type="text" class="contactFields" id="name" placeholder="Your Name" required>
+                        <label for="email" class="visuallyHidden">your email</label>
+                        <input type="email" class="contactFields" id="email" placeholder="Your Email" required>
+                        <label for="message" class="visuallyHidden">your message</label>
+                        <textarea class="contactFields" id="message" placeholder="Your Message" required
+                            minlength="5"></textarea>
+                        <div> <button data-text="send" type="submit">send</button><img
+                                src="./assets/Spinner-1s-200px.gif" alt="spinner"></div>
+                        <p></p>
+                    </form>
                 </div>
-            </section>
+            </div>
+        </section>
     </main>
     <script src='https://code.jquery.com/jquery-3.4.0.min.js'
         integrity='sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=' crossorigin='anonymous'></script>
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
     <script src="./js/script.js"></script>
     <!--HandWriting Page Loader-->
     <script src="plugin/vara.min.js"></script>

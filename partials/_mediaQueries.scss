@@ -1,0 +1,162 @@
+@media (max-width: 1100px) {
+    .aboutImg img {
+        width: 100%;
+    }
+    .aboutInfo {
+        flex-direction: column;
+        align-items: center;
+    }
+    .aboutText {
+        width: 100%;
+        margin-top: 70px;
+    }
+    .aboutImg {
+        width: auto;
+        margin-right: 0;
+        .abirPicBorder::before {
+            width: 100%;
+        }
+    }
+    .skillsList li {
+        width: calc(100% / 4);
+    }
+
+    .bodyWrapper {
+        width: 78%;
+    }
+    .projects {
+        flex-direction: column;
+    }
+    .projectImg {
+        margin-bottom: 60px;
+    }
+    .projectInfo {
+        width: 100%;
+    }
+}
+
+@media (max-width: 800px) {
+    h1 {
+        font-size: 4.5rem;
+    }
+    h2 {
+        font-size: 6.5rem;
+    }
+
+    .shadow {
+        font-size: 9rem;
+        top: 60px;
+    }
+
+    header .hamburger {
+        display: flex;
+    }
+    header ul {
+        position: absolute;
+        left: 0;
+        top: -1000px;
+          height: calc(100vh - 64px);
+        width: 100%;
+        background-color: black;
+        transition: top 1s;
+        display: block;
+    }
+
+    header nav {
+        width: 100%;
+        align-items: flex-start;
+        justify-content: flex-end;
+    }
+    .displayHamburger {
+        top: 64px;
+    }
+    .theActive {
+        color: $secondaryColor;
+        background-color: transparent;
+    }
+   
+    header {
+        background-image: url("../assets/mobileBg.jpg");
+        background-size: contain;
+        background-repeat: repeat;
+        .headerBottom {
+            padding-top: 0;
+        padding-left: 0;
+        justify-content: center;
+
+         h1 {
+            transform: rotateY(0deg);
+           a {
+                    transform: translateZ(0);
+           }
+        }
+    }
+    }
+    .skillsList li {
+        width: calc(100% / 3);
+    }
+    .projectTypes ul {
+        flex-wrap: wrap;
+        li {
+            width: 50%;
+            text-align: center;
+            a {
+                width: 100%;
+            }
+        }
+    }
+    .contact {
+        flex-direction: column;
+    }
+    form {
+        width: 100%;
+    }
+    .contactInfo {
+        width: 100%;
+    }
+    .skillsList li {
+        width: calc(100% / 4);
+    }
+    .contactInfo h3 {
+        font-size: 2.5rem;
+    }
+}
+@media (max-width: 510px) {
+    .bodyWrapper,
+    .headerWrapper {
+        width: 85%;
+    }
+    h1 {
+        font-size: 3rem;
+    }
+    h2 {
+        font-size: 4.5rem;
+    }
+    .shadow {
+        font-size: 5.3rem;
+        top: 40px;
+    }
+    h3 {
+        font-size: 5.5rem;
+    }
+
+    
+    .skillsList li {
+        width: calc(100% / 2);
+    }
+    .projectTypes ul li {
+        width: 100%;
+    }
+    .projects {
+        padding: 10px;
+    }
+    .tools {
+        flex-direction: column;
+    }
+    .projectInfo h4 {
+        margin-bottom: 20px;
+    }
+    .projectImg {
+        width: 100%;
+    }
+}

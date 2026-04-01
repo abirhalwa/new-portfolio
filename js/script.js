@@ -144,20 +144,30 @@ app.onScroll= function() {
     }
 
     app.sendEmail=function() {
-        $('form').on('submit', function(event){
+        $('#contactForm').on('submit', function(event){
             event.preventDefault();
-            $('main form div img').css('display', 'block');
-            Email.send({
-                SecureToken: "35df6492-4423-4240-8376-3f71bff14f54",
-                To: 'abir.halwa@gmail.com',
-                From: $('#email').val(),
-                Subject: `An email from ${$('#name').val()}`,
-                Body: $('#message').val(),
-            }).then(function(m){
-                $('main form div img').css('display', 'none');
-                $('form').trigger("reset");
-                $('form p').text('Thank you! Your message has been successfully sent. I will contact you very soon!');
-                console.log(m);
+            const $form = $(this);
+            const $spinner = $form.find('div img');
+            const $message = $form.find('p');
+
+            $spinner.css('display', 'block');
+            $message.text('');
+
+            $.ajax({
+                url: $form.attr('action'),
+                method: $form.attr('method'),
+                data: $form.serialize(),
+                dataType: 'json',
+                headers: {
+                    Accept: 'application/json'
+                }
+            }).done(function(){
+                $form.trigger("reset");
+                $message.text('Thank you! Your message has been successfully sent. I will contact you very soon!');
+            }).fail(function(){
+                $message.text('The message could not be sent right now. Please try again in a moment or email me directly.');
+            }).always(function(){
+                $spinner.css('display', 'none');
             });
         });
     }

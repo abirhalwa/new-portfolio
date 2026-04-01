@@ -696,13 +696,13 @@
                             </ul>
                         </nav>
                     </div>
-                  <form action="https://formspree.io/mzbjlzor" method="POST">
+                  <form id="contactForm" action="https://formspree.io/mzbjlzor" method="POST">
                         <label for="name" class="visuallyHidden">your name</label>
-                        <input type="text" class="contactFields" id="name" placeholder="Your Name" required>
+                        <input type="text" class="contactFields" id="name" name="name" placeholder="Your Name" required>
                         <label for="email" class="visuallyHidden">your email</label>
-                        <input type="email" class="contactFields" id="email" placeholder="Your Email" required>
+                        <input type="email" class="contactFields" id="email" name="email" placeholder="Your Email" required>
                         <label for="message" class="visuallyHidden">your message</label>
-                        <textarea class="contactFields" id="message" placeholder="Your Message" required
+                        <textarea class="contactFields" id="message" name="message" placeholder="Your Message" required
                             minlength="5"></textarea>
                         <div> <button data-text="send" type="submit">send</button><img
                                 src="./assets/Spinner-1s-200px.gif" alt="spinner"></div>
@@ -714,8 +714,6 @@
     </main>
     <script src='https://code.jquery.com/jquery-3.4.0.min.js'
         integrity='sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=' crossorigin='anonymous'></script>
-    <script src="https://smtpjs.com/v3/smtp.js">
-    </script>
     <script src="./js/script.js"></script>
     <!--HandWriting Page Loader-->
     <script src="plugin/vara.min.js"></script>
